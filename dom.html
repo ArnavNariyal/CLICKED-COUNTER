@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+<head>
+    
+    <title>Dom</title>
+</head>
+<body>
+    <!-- <h1 id="heading">hello my name is arnav nariyal</h1>
+    <button onmouseover="change()">CLICK ME</button> -->
+    <button onclick="bulb_on()">click here to turn on</button>
+    <img  id="bulb" src="./bulboff.gif" alt="">
+    <h1 id="heading">bulb is off</h1>
+    
+    <button onclick="bulb_off()">Click here to turn off the light</button>
+
+    <script>
+    //     function change(){
+    //     let element=document.getElementById("heading")
+    //     element.innerHTML="aur bro kaise chal ri";
+    //     element.style.color="red";
+    // }
+    function bulb_on(){
+        let bulb=document.getElementById("bulb")
+        let heading=document.getElementById("heading")
+        heading.innerHTML="bulb is on"
+        heading.style.border="2px solid red"
+        bulb.src="./pic_bulbon.gif";
+
+        
+    }
+    function bulb_off(){
+        let bulb=document.getElementById("bulb")
+        let heading=document.getElementById("heading")
+        heading.innerHTML="bulb is off"
+        heading.style.border="2px solid blue"
+        bulb.src="./bulboff.gif";
+        
+
+
+
+    }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>dom project</title>
+</head>
+
+<body>
+    <label for="">ENTER YOUR FIRST NUMBER</label>
+    <input type="number" name="" id="first"><br><br>
+    <label for="">ENTER YOUR SECOND NUMBER</label>
+    <input type="number" name="" id="second"><br><br>
+    <button onclick="add()">ADDITION</button>
+    <button onclick="subtract()">SUBTRACTION</button>
+    <button onclick="mult()">MULTIPLICATION</button>
+    <button onclick="divide()">DIVIDE</button>
+    <div id="answer"></div>
+    <script>
+        function add() {
+
+
+            let first = document.getElementById("first").value;
+            let second = document.getElementById("second").value;
+
+            let sum=Number.parseFloat(first) + Number.parseFloat(second)
+            let answer=document.getElementById("answer").innerHTML=Number.parseFloat(sum);
+        }
+        function subtract() {
+            let first = document.getElementById("first").value;
+            let second = document.getElementById("second").value;
+            let sub=Number.parseFloat(first) - Number.parseFloat(second)
+            let answer=document.getElementById("answer").innerHTML=Number.parseFloat(sub);
+        }
+    
+        function mult() {
+            let first = document.getElementById("first").value;
+            let second = document.getElementById("second").value;
+            let mult=Number.parseFloat(first) * Number.parseFloat(second)
+            let answer=document.getElementById("answer").innerHTML=Number.parseFloat(mult);
+        }
+    
+        function divide() {
+            let first = document.getElementById("first").value;
+            let second = document.getElementById("second").value;
+            let div=Number.parseFloat(first) + Number.parseFloat(second)
+            let answer=document.getElementById("answer").innerHTML=Number.parseFloat(div);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>priyanshu is a girl</h1>
+    <h1>aryan da is a boy </h1>
+    <div class="parent">
+    <div class="web"> ARYAN <span> he </span></div>
+    <div class="web">HELLO ARNAV</div>
+    <div class="web">HELLO WORLD</div>
+    <div class="web">HELLO BHAIYA</div>
+</div>
+    <button onclick="arnav()">Click me </button>
+    <!-- methods froom which we can target element -->
+
+
+
+    <!-- get element through id
+        through class
+        tag name
+     -->
+    <script>
+        function arnav() {
+            let heading =document.createElement("h1")
+            let text=document.createTextNode("hello sourabh")
+            heading.appendChild(text)
+            let parent=document.querySelector(".parent")
+            parent.appendChild(heading)
+        
+            // let t = document.querySelectorAll("span");
+            // for(i=0;i<t.length;i++){
+            //     t[i].innerHTML = " is a girl";
+
+            }
+            
+        }
+    </script>
+
+</body>
+
+</html>

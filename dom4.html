@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>convertor</h1>
+    <input type="number" name="" id="ruppee">
+    <select name="" id="selectedvalue" onchange="answer()">
+        <option value="DOLLAR">DOLLAR</option>
+        <option value="RUBBLE">RUBBLE</option>
+        <option value="YEN">YEN</option>
+        <option value="JAPAN">JAPAN</option>
+        <option value="EURO">EURO</option>
+    </select>
+    <h1 id="currency"></h1>
+    <div id="answer"></div>
+    <script>
+        function answer(){
+            let s=document.getElementById("selectedvalue").value;
+            if(s=="DOLLAR"){
+                let ruppee=document.getElementById(ruppee).value;
+                let d=parseFloat(ruppee)/80;
+                document.getElementById("currency").innerHTML=s;
+                document.getElementById("answer").innerHTML=d;
+                
+            }
+        }
+    </script>
+
+</body>
+</html>
